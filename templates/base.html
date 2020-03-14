@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>${self.title()}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+<!-- 页面头部 -->
+<header>
+    <nav>
+        <ul>
+            <li><a href="${ url_for('index') }">首页</a></li>
+            <li><a href="${ url_for('cat', name='国内新闻') }">国内新闻</a></li>
+            <li><a href="${ url_for('cat', name='国际新闻') }">国际新闻</a></li>
+            <li><a href="${ url_for('cat', name='科技') }">科技</a></li>
+        </ul>
+    </nav>
+</header>
+
+<article>
+    <!-- 新闻内容部分 -->
+    ${self.content()}
+</article>
+
+<!-- 其它脚本 -->
+${self.extrajs()}
+</body>
+</html>
+
+<%def name="title()"></%def>
+<%def name="extrajs()"></%def>
+<%def name="css()"></%def>
+<%def name="content()"></%def>

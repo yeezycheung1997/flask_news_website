@@ -1,0 +1,18 @@
+<%inherit file="base.html" />
+
+<%def name="title()">${name}</%def>
+
+<%def name="content()">
+    <h3>新闻类别>${ name }</h3>
+    % for news in news_list:
+        <div class="list-news">
+            <div class="img-content">
+                <img src="${ news.image }">
+            </div>
+            <div class="right-content">
+                <h3><a href="${ url_for('detail', pk=news.id) }">${ news.title }</a></h3>
+                <small>${ news.created_at }</small>
+            </div>
+        </div>
+    % endfor
+</%def>

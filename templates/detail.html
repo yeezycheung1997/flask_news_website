@@ -1,0 +1,9 @@
+<%inherit file="base.html" />
+
+<%def name="title()">${new_obj.type}</%def>
+
+<%def name="content()">
+<% from db_add import UrlToText %>
+    <h3>${ new_obj.title }</h3>
+    <p>${ UrlToText(new_obj.content) }</p>
+</%def>
