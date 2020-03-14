@@ -1,5 +1,5 @@
 # mobile devices news website based on Flask
-This is a simple news website based on Flask. The website have front end and back end. I use Mako template instead of Jinja2 template which Flask defaulted.
+This is a simple news website based on Flask. The website have front end and back end. I use Mako template instead of Jinja2 template which Flask defaulted. I have not finished backend. d(^_^O)
 ## Environment
 ```
 python 3.6.8
